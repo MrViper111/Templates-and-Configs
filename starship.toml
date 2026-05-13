@@ -1,0 +1,75 @@
+format = """
+[╭─](gray)$username$directory$git_branch$git_status$python$c$java$rust
+[╰─](gray)$character"""
+
+right_format = """$cmd_duration$time"""
+
+[username]
+show_always = true
+style_user = "bold cyan"
+style_root = "bold red"
+format = "[$user]($style) "
+
+[directory]
+style = "bold lavender"
+format = "[ $path]($style) "
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+format = "([$all_status$ahead_behind]($style) )"
+style = "bold red"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+untracked = "?"
+modified = "!"
+staged = "+"
+deleted = "✘"
+conflicted = "⚡"
+
+[python]
+symbol = " "
+style = "bold yellow"
+format = "[$symbol$version( \\($virtualenv\\))]($style) "
+
+[c]
+symbol = " "
+style = "bold blue"
+format = "[$symbol$version]($style) "
+
+[java]
+symbol = " "
+style = "bold red"
+format = "[$symbol$version]($style) "
+
+[rust]
+symbol = " "
+style = "bold orange"
+format = "[$symbol$version]($style) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold purple)"
+
+[cmd_duration]
+min_time = 2000
+format = "[ $duration](bold yellow) "
+
+[time]
+disabled = false
+format = "[$time]($style)"
+style = "bold dimmed white"
+time_format = "%H:%M"
+
+[os]
+disabled = true
+
+[hostname]
+disabled = true
