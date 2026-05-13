@@ -1,6 +1,6 @@
 format = """
-[╭─](gray)$username$directory$git_branch$git_status$python$c$java$rust
-[╰─](gray)$character"""
+[╭─](#585b70)$username$directory$git_branch$git_status$python$c$java$rust
+[╰─](#585b70)$character"""
 
 right_format = """$cmd_duration$time"""
 
