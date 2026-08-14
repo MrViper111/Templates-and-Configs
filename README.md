@@ -10,3 +10,5 @@ A bunch of templates and configs that I use for several different applications /
 `init.lua` - neovim config
 
 `starship.toml` - starship (more terminal tools) config
+
+`main-template.tex` - template for LaTeX
